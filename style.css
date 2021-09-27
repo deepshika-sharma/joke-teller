@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #45badd;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: url("./robot.gif") no-repeat center center;
+}
+
+#btn {
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 150px;
+  font-size: 1.1em;
+  background: #ff3482;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  left: 10%;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn:hover {
+  filter: brightness(95%);
+}
+
+#btn:active {
+  transform: scale(0.98);
+}
+
+#btn:disabled {
+  filter: brightness(30%);
+  cursor: default;
+}
+
+/* Audio */
+#audio {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
